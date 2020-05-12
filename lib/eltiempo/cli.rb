@@ -5,19 +5,19 @@ require "open-uri"
 module Eltiempo
   class WeatherCLI < Thor
 
-    desc "today LOCALIDAD","Returns the actual temperature"
+    desc "-today LOCALIDAD","Returns the actual temperature"
     
     def today(location)
       calculateTemperature(location, 0)  
     end
 
-    desc "av_max LOCALIDAD","Returns the average maximum temperature during the week"
+    desc "-av_max LOCALIDAD","Returns the average maximum temperature during the week"
     
     def av_max(location)
       calculateTemperature(location, 1) 
     end
 
-    desc "av_min LOCALIDAD","Returns the average minimum temperature during the week"
+    desc "-av_min LOCALIDAD","Returns the average minimum temperature during the week"
     
     def av_min(location)
       calculateTemperature(location, 2)
