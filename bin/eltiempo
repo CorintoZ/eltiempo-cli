@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'eltiempo'
+
+Eltiempo::WeatherCLI.start(ARGV)
