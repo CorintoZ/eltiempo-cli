@@ -10,6 +10,7 @@ bundle exec bin/eltiempo [options]
 ```
 Or you can install it locally and run with: 
 ```ruby
+rake build
 rake install
 eltiempo [options]
 ```
